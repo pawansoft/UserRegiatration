@@ -7,6 +7,7 @@ public class UserDetail {
         System.out.println(userDetail.checkLName("Kumar"));
         System.out.println(userDetail.checkEmail("pk.soft29@gmail.com"));
         System.out.println(userDetail.checkMobileNumber("91 8083373213"));
+        System.out.println(userDetail.checkPassword("sgsg134134"));
 
     }
 
@@ -28,6 +29,11 @@ public class UserDetail {
     //This method is used to validate Mobile Number
     public boolean checkMobileNumber(String mobileNumber){
         return (mobileNumber.matches("^[0-9]{1,2}[ ][0-9]{10}$"));
+    }
+
+    //this method is used to validate password
+    public boolean checkPassword(String password) {
+        return (password.matches("[0-9a-zA-Z]{8,}"));
     }
 }
 
